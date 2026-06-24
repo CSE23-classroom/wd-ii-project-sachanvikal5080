@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Amazon Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">🛒 <span>amazon</span></a>
+    <input class="search" type="text" placeholder="Search products..." />
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="cart-link">
+        Cart <span class="badge" id="cart-count">0</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- CONTACT FORM -->
+  <div class="contact-page">
+    <h2>Contact Us</h2>
+    <div id="success-msg" class="success" style="display:none;">
+      ✅ Message Sent! We'll reply soon.
+    </div>
+    <form class="contact-form" onsubmit="sendMessage(event)">
+      <label>Name</label>
+      <input type="text" placeholder="Your name" required />
+      <label>Email</label>
+      <input type="email" placeholder="Your email" required />
+      <label>Message</label>
+      <textarea rows="5" placeholder="Your message..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2024 Amazon Clone | College Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
