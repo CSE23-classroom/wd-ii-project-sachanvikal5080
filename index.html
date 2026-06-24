@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amazon Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">🛒 <span>amazon</span></a>
+    <input class="search" type="text" placeholder="Search products..." />
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="cart-link">
+        Cart <span class="badge" id="cart-count">0</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- SLIDER -->
+  <div class="slider">
+    <button onclick="prevSlide()">❮</button>
+    <div class="slide-text" id="slide-content">
+      <h2>Big Sale Today!</h2>
+      <p>Up to 60% Off Electronics</p>
+      <button class="shop-btn">Shop Now</button>
+    </div>
+    <button onclick="nextSlide()">❯</button>
+    <div class="dots" id="dots"></div>
+  </div>
+
+  <!-- PRODUCTS -->
+  <h2 class="section-title">Today's Deals</h2>
+  <div class="products" id="products"></div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2024 Amazon Clone | College Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
